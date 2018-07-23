@@ -108,17 +108,17 @@
 
 <section class="my_collection" id="myCollection" style="margin-top: 3rem;">
   <h2>COLLECTIONS</h2>
-  <div class="card-deck" id="topCollection">
+  <div class="card-deck" id="demoCollection">
 
   </div>
-  <button type="button" class="btn btn-indigo" data-toggle="modal" data-target="#modalQuickView">Create New Collection</button>
+  <button type="button" class="btn btn-indigo" data-toggle="modal" data-target="#modalQuickView" id="new_coll">Create New Collection</button>
 <!-- Modal: modalQuickView -->
 <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="row">
-          <div class="col-lg-5">
+          <!-- <div class="col-lg-5"> -->
 
             <!-- <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
@@ -147,9 +147,9 @@
                 </ol>
             </div> -->
 
-          </div>
+          <!-- </div> -->
 
-          <div class="col-lg-7">
+          <div class="col-sm-12">
             <h2 class="h2-responsive product-name">
               <strong>Collection Name</strong>
             </h2>
@@ -180,7 +180,7 @@
             <div class="card-body">
               <div class="text-center">
                 <button type="button" class="btn btn-indigo" data-dismiss="modal">Close</button>
-                <button class="btn btn-indigo">Create collection
+                <button class="btn btn-indigo" id="cc_button">Create collection
                   <i class="fa fa-cart-plus ml-2" aria-hidden="true"></i>
                 </button>
               </div>
@@ -207,24 +207,78 @@
     <div class="modal-dialog modal-fluid" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel"> </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="card-deck" id = "modal_body">
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-indigo" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-indigo">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Select Collection</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <!-- <div class="md-form mb-5">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="defaultForm-email" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                </div>
+
+                <div class="md-form mb-4">
+                    <i class="fa fa-lock prefix grey-text"></i>
+                    <input type="password" id="defaultForm-pass" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                </div> -->
+                <!--Dropdown primary-->
+             <div class="dropdown" id="dropdown">
+
+                 <!--Trigger-->
+                 <!-- <button class="btn btn-indigo dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collection</button>
+
+
+                 <!--Menu-->
+                 <!-- <select class="dropdown-menu dropdown-primary" id="dropdown"> -->
+                     <!-- <a class="dropdown-item" href="#" id="dd_1">Action</a>
+                     <a class="dropdown-item" href="#" id="dd_2">Another action</a>
+                     <a class="dropdown-item" href="#" id="dd_2">Something else here</a>
+                     <a class="dropdown-item" href="#" id="dd_2">Something else here</a> -->
+                 <!-- </select>  -->
+             </div>
+ <!--/Dropdown primary-->
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-indigo" id="selectCollectionButton">Add to Collection</button>
             </div>
         </div>
     </div>
 </div>
 
+<!-- <div class="text-center">
+    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch Modal Login Form</a>
+</div> -->
 
+<!-- <section>
+  <h2>TEST COLLECTIONS</h2>
+  <div class="card-deck" id="demoCollection">
 
+  </div>
+</section> -->
 
 <footer id = "contact">
   <!-- Section: Contact v.3 -->
