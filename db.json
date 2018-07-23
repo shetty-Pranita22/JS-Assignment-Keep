@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "collect": [
+    {
+      "id": "1",
+      "img": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1501223786.jpg",
+      "name": "Trending This Week",
+      "text": "The most popular restaurants in town this week"
+    },
+    {
+      "id": "54162",
+      "img": "https://b.zmtcdn.com/data/pictures/2/54162/60a95e08f9b514d2b3afae3579f7caf1.jpg",
+      "name": "The Black Pearl",
+      "text": "North Indian, European, Mediterranean"
+    },
+    {
+      "id": "52134",
+      "img": "https://b.zmtcdn.com/data/pictures/0/53480/17e726e28a461cfb009375789ca0be62.jpg?output-format=webp",
+      "name": "Pizza Hut",
+      "text": "Pizza, Fast Food, Italian"
+    }
+  ]
+}

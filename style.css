@@ -1,0 +1,35 @@
+body {
+  margin : 1rem 1rem;
+  background: lightpink;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#main_header {
+  background-image: url('./food.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main_title {
+  text-shadow: 2px 2px 5px black;
+  font-size: 53px;
+  font-family: 'Sigmar One', cursive;
+}
+
+h2 {
+  text-shadow: 2px 2px 5px white;
+  font-size: 35px;
+  font-family: 'Sigmar One', cursive;
+}
+
+.col-lg-4 {
+    background-color: #3f51b5;
+}
+
+button.btn.btn-indigo.waves-effect.waves-light {
+    padding: 1rem;
+    margin: 16px;
+}
