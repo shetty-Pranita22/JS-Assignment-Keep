@@ -25,11 +25,25 @@
       "text": "North Indian, European, Mediterranean"
     },
     {
+      "id": "35",
+      "collection": "Chinese",
+      "img": "https://b.zmtcdn.com/data/collections/b5a5caace052be929d9829d32ae1c591_1441697242_l.jpg",
+      "name": "Ramen",
+      "text": "The city's best ramen, and more!"
+    },
+    {
       "id": "1",
-      "collection": "select",
+      "collection": "North",
       "img": "https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1501223786.jpg",
       "name": "Trending This Week",
       "text": "The most popular restaurants in town this week"
+    },
+    {
+      "id": "52134",
+      "collection": "Eastern",
+      "img": "https://b.zmtcdn.com/data/pictures/0/53480/17e726e28a461cfb009375789ca0be62.jpg?output-format=webp",
+      "name": "Pizza Hut",
+      "text": "Pizza, Fast Food, Italian"
     }
   ],
   "mycollections": [
@@ -42,6 +56,16 @@
       "name": "Eastern",
       "text": "not much description",
       "id": 3
+    },
+    {
+      "name": "North",
+      "text": "bvgftyfuyfkih",
+      "id": 4
+    },
+    {
+      "name": "Italian",
+      "text": "sdgsdgsdfgsfg",
+      "id": 5
     }
   ]
 }

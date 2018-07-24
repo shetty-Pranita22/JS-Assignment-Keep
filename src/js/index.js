@@ -12,6 +12,7 @@ var createButton = function (html) {
     button.innerHTML =html;
     return button;
 }
+
 //TopPicks
 fetch(url,{
   method: 'GET',
@@ -58,8 +59,6 @@ fetch(url,{
       }
     })
   })
-   .then(reload());
-
 
 //Searchbar
 window.search = function(){
@@ -211,6 +210,7 @@ function addToCollection(id, collectionName){
     alert('Added to collection');     //Adding to json-server and calling reload function
 }
 
+//display the restaurants in collection
 function reload(collectionName){
     const modalTitle = document.getElementById('exampleModalLabel');
     modalTitle.innerHTML=collectionName;
@@ -260,7 +260,7 @@ function reload(collectionName){
     })
 }
 
-
+//deleting the restaurant in the collection
 function deleteRestaurant(id){
     let fetchData = {
         method: "DELETE", // *GET, POST, PUT, DELETE, etc.
@@ -276,12 +276,14 @@ function deleteRestaurant(id){
     .then(reshow());
 }
 
+//creating element
 function createHTMLElement(html) {
   const template = document.createElement('template');
   template.innerHTML = html;
   return template.content.firstElementChild;
 }
 
+//deleting the collection
 function deleteCollec(id, collectionName){
     let fetchData = {
         method: "DELETE", // *GET, POST, PUT, DELETE, etc.
@@ -307,13 +309,14 @@ function deleteCollec(id, collectionName){
     });
 }
 
-
+//creating new mycollection
 const new_collection = document.getElementById('cc_button');
 new_collection.onclick = function(){
   addCollec();
 }
 reshow();
 
+//adding mycollection
 function addCollec(){
     var div = document.createElement('div');
     var cardBody = document.createElement('div');
@@ -343,6 +346,7 @@ function addCollec(){
     alert('Collection created');
 }
 
+//displaying mycollection
 function reshow(){
     const demoCollection = document.getElementById("demoCollection");
     var get2Url = "http://localhost:3000/mycollections";
